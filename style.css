@@ -1,0 +1,23 @@
+:root {
+  --bg: #fbf8f1; --card: #ffffff; --ink: #1d2622; --muted: #5d6b65;
+  --brand: #0f5f4d; --gold: #b8892f; --line: #e6e0d2;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0d1513; --card: #15201d; --ink: #eef2ef; --muted: #a8b6b0;
+          --brand: #4fb39a; --gold: #d9ae4c; --line: #26332f; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+       font: 17px/1.8 "Geeza Pro", "Noto Naskh Arabic", "Segoe UI", Tahoma, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+header img { width: 64px; height: 64px; border-radius: 15px; }
+h1 { font-size: 28px; margin: 0; }
+h2 { font-size: 20px; margin: 32px 0 8px; color: var(--brand); }
+p, li { color: var(--ink); }
+.sub { color: var(--muted); margin: 0 0 24px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px 22px; margin: 16px 0; }
+a { color: var(--brand); }
+nav { display: flex; gap: 18px; flex-wrap: wrap; margin: 12px 0 8px; }
+footer { margin-top: 48px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 16px; }
+.en { direction: ltr; text-align: left; }
